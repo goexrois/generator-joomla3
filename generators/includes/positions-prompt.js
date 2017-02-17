@@ -45,7 +45,7 @@ var extend = require('extend'),
             var position = {};
             for (var j in options) {
               if (options[j] === true) {
-                position[j] = (j == 'name' ? s.replaceAll(s.slugify(answers[j + i]), '-', '_') : answers[j + i]);
+                position[j] = answers[j + i]);
               }
             }
             positions.push(position);
